@@ -1,3 +1,50 @@
 body {
   background: peachpuff;
 }
+
+div {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+
+.a {
+  flex-grow: 1;
+}
+
+.h {
+  flex-flow: 2;
+  min-height: 30vh;
+}
+
+.main {
+  display: flex;
+  flex-grow: 5;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.b, .c, .d, .e, .f, .g {
+  width: 30%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-flow: row wrap;
+  }
+
+  .a {
+    width: 100%;
+  }
+
+  .h {
+    width: 40%;
+  }
+}

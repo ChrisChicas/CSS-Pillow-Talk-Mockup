@@ -1,3 +1,38 @@
 body {
   background: blanchedalmond;
 }
+
+div {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a, .c {
+  flex-grow: 1;
+}
+
+.b {
+  flex-grow: 5;
+}
+
+@media (min-width: 600px) {
+  .a {
+    width: 100%;
+  }
+
+  .container {
+    flex-flow: row wrap;
+  }
+
+  .b {
+    min-height: 60vh;
+  }
+
+}

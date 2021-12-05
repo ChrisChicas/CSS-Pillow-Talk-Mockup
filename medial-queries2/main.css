@@ -1,3 +1,59 @@
 body {
   background: papayawhip;
 }
+
+div {
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  flex-flow: column wrap;
+}
+
+.a, .f {
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-grow: 5;
+}
+
+.b {
+  margin: 5px;
+  width: 100%;
+}
+
+.c, .d, .e {
+  margin: 5px;
+  width: 20vw;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-flow: row wrap;
+  }
+  
+  .a {
+    width: 100%;
+  }
+
+  .b {
+    min-height: 50vh;
+  }
+
+  .c, .d, .e {
+    min-height: 20vh;
+  }
+
+  .f {
+    min-width: 10vw;
+  }
+}
