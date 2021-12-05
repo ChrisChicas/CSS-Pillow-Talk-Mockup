@@ -14,7 +14,6 @@ div {
   justify-content: space-between;
 }
 
-
 .a {
   flex-grow: 1;
 }
@@ -32,10 +31,10 @@ div {
 }
 
 .b, .c, .d, .e, .f, .g {
-  width: 30%;
+  min-width: 25%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .container {
     flex-flow: row wrap;
   }
@@ -43,7 +42,7 @@ div {
   .a {
     width: 100%;
   }
-
+  
   .h {
     width: 40%;
   }

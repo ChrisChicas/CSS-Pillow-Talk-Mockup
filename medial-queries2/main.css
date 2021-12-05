@@ -33,7 +33,7 @@ div {
 
 .c, .d, .e {
   margin: 5px;
-  width: 20vw;
+  min-width: 25vw;
 }
 
 @media (min-width: 600px) {
@@ -54,6 +54,6 @@ div {
   }
 
   .f {
-    min-width: 10vw;
+    min-width: 15vw;
   }
 }

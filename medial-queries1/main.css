@@ -35,4 +35,8 @@ div {
     min-height: 60vh;
   }
 
+  .c {
+    min-width: 20%;
+  }
+
 }
